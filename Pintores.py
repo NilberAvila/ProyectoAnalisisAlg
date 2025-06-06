@@ -23,9 +23,9 @@ def calcular_tiempo(cant_tablas, cant_pintores, tablas):
     return tabla_tiempos[cant_pintores][cant_tablas]
 
 
-tablas = [2, 2, 2, 2]
+tablas = [10, 20, 30, 40]
 cant_tablas = len(tablas)
-cant_pintores = 3
-
+# En caso de haber mas pintores que tablas, estos se quedaran sin trabajo debido a las restricciones del caso
+cant_pintores = 4
 resultado = calcular_tiempo(cant_tablas, cant_pintores, tablas)
 print(f"El tiempo mínimo para pintar con {cant_pintores} pintores es: {resultado}")
